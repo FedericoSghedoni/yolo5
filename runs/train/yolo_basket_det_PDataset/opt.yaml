@@ -1,5 +1,5 @@
 weights: yolov5s.pt
-cfg: yolov5/models/yolov5s.yaml
+cfg: yolo5/models/yolov5s.yaml
 data: dataset/data.yaml
 hyp:
   lr0: 0.01
@@ -30,8 +30,8 @@ hyp:
   mosaic: 1.0
   mixup: 0.1
   copy_paste: 0.0
-epochs: 20
-batch_size: 14
+epochs: 100
+batch_size: 16
 imgsz: 416
 rect: false
 resume: false
@@ -49,7 +49,7 @@ single_cls: false
 optimizer: SGD
 sync_bn: false
 workers: 24
-project: yolov5/runs/train
+project: yolo5/runs/train
 name: yolo_basket_det_PDataset
 exist_ok: false
 quad: false
@@ -65,4 +65,4 @@ entity: null
 upload_dataset: false
 bbox_interval: -1
 artifact_alias: latest
-save_dir: yolov5/runs/train/yolo_basket_det_PDataset5
+save_dir: yolo5/runs/train/yolo_basket_det_PDataset3
